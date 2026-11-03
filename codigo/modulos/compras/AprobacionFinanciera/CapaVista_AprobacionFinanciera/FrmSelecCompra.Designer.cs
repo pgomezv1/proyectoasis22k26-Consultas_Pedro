@@ -142,6 +142,7 @@ namespace CapaVista_AprobacionFinanciera
             this.ComprasBtnEvaluar.Size = new System.Drawing.Size(80, 80);
             this.ComprasBtnEvaluar.TabIndex = 3;
             this.ComprasBtnEvaluar.UseVisualStyleBackColor = false;
+            this.ComprasBtnEvaluar.Click += new System.EventHandler(this.ComprasBtnEvaluar_Click);
             // 
             // ComprasBtnRegresar
             // 
@@ -187,8 +188,7 @@ namespace CapaVista_AprobacionFinanciera
             // 
             this.ComprasUsrEncabezadoFormulario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
             this.ComprasUsrEncabezadoFormulario.Codigo = "6005";
-            this.ComprasUsrEncabezadoFormulario.Descripcion = "Consulta las órdenes de compra pendientes y selecciona una para revisar su aproba" +
-    "ción financiera.";
+            this.ComprasUsrEncabezadoFormulario.Descripcion = "Comprovación de compra realizada";
             this.ComprasUsrEncabezadoFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComprasUsrEncabezadoFormulario.Location = new System.Drawing.Point(10, 10);
             this.ComprasUsrEncabezadoFormulario.Margin = new System.Windows.Forms.Padding(10);
@@ -198,7 +198,7 @@ namespace CapaVista_AprobacionFinanciera
             this.ComprasUsrEncabezadoFormulario.Size = new System.Drawing.Size(1280, 130);
             this.ComprasUsrEncabezadoFormulario.TabIndex = 0;
             this.ComprasUsrEncabezadoFormulario.TabStop = false;
-            this.ComprasUsrEncabezadoFormulario.Titulo = "Aprobación financiera";
+            this.ComprasUsrEncabezadoFormulario.Titulo = "Compra";
             // 
             // ComprasPnlContenido
             // 
@@ -245,7 +245,8 @@ namespace CapaVista_AprobacionFinanciera
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmAprobacionFinanciera";
-            this.Text = "6005 – AprobacionFinanciera";
+            this.Text = "6005 – Compras";
+            this.Load += new System.EventHandler(this.FrmAprobacionFinanciera_Load);
             this.ComprasTlpContenidoVisible.ResumeLayout(false);
             this.ComprasTlpAcciones.ResumeLayout(false);
             this.ComprasTlpFormulario.ResumeLayout(false);
